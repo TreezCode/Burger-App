@@ -1,0 +1,70 @@
+<div class="navbar">
+  <div class="nav-brand"></div>
+</div>
+
+<div class="container mt-5">
+
+  <div class="row text-center">
+
+    <div class="header col-md-12">
+      <a href="https://fontmeme.com/nickelodeon-font/"><img src="https://fontmeme.com/permalink/190617/4db3d57a6ab3fdaa4b4f8616a9d90f33.png" alt="nickelodeon-font" border="0"></a>
+    </div>
+
+  </div>
+
+  <div class="row row-flex text-center mt-3">
+
+    <div class="card col-md-5">
+      <div class="card-body">
+        <div class="card-header" id="ready">
+          <h2>Ready to Grub</h2>
+        </div>
+        <ol>
+          {{#each burgers}}
+            {{#unless devour}}
+              {{> burgers/burger-block devour=true}}
+            {{/unless}}
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+
+    <div class="card col-md-5">
+      <div class="card-body">
+        <div class="card-header" id="finished">
+          <h2>Been Grubbed</h2>
+        </div>
+        <ol>
+          {{#each burgers}}
+            {{#if devour}}
+              {{> burgers/burger-block devour=false}}
+            {{/if}}
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row row-center text-center mt-3">
+
+    <div class="header col-md-12">
+      <h2><a href="https://fontmeme.com/nickelodeon-font/"><img src="https://fontmeme.com/permalink/190617/0adf7a518c2deff0986a8aa311ea5419.png" alt="nickelodeon-font" border="0"></a></h2>
+    </div>
+
+  </div>
+
+  <div class="row text-center mt-3">
+
+      <form class="create-form col-md-12">
+        <div class="form-group">
+          <textarea class="text-center pt-3" type="text" id="ca" name="name" rows="2" cols="40" placeholder="Burger Name"></textarea>
+        </div>
+        <button type="submit">Add burger</button>
+      </form>
+
+  </div>
+
+  </div>
+
+</div>

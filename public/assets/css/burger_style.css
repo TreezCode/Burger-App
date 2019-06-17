@@ -1,0 +1,39 @@
+
+body {
+    background: url("../img/good-burger-bg.jpg") center center fixed;
+    background-size: cover;
+}
+
+ol {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.header {
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px grey inset;
+}
+
+.row-center {
+    width: 50%;
+    margin: auto;
+}
+
+.row-flex {
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 0 0 10px 5px grey inset;
+    border: none;
+}
+
+#ready {
+    color: green;
+}
+
+#finished {
+    color: red;
+}

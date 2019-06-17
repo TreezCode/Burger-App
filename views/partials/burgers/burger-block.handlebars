@@ -1,0 +1,11 @@
+<li class="mt-3">
+	{{burger_name}}
+
+	{{#if devour}}
+		<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">DEVOUR TIME!</button>
+	{{/if}}
+
+	{{#unless devour}}
+		<button class="delete-burger" data-id="{{this.id}}">Throw Away</button>
+	{{/unless}}
+</li>
