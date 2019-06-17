@@ -14,9 +14,9 @@
 				</div>
 				<ol>
 					{{#each burgers}}
-						{{#unless devour}}
-							{{> burgers/burger-block devour=true}}
-						{{/unless}}
+					{{#unless devour}}
+					{{> burgers/burger-block devour=true}}
+					{{/unless}}
 					{{/each}}
 				</ol>
 			</div>
@@ -29,9 +29,9 @@
 				</div>
 				<ol>
 					{{#each burgers}}
-						{{#if devour}}
-							{{> burgers/burger-block devour=false}}
-						{{/if}}
+					{{#if devour}}
+					{{> burgers/burger-block devour=false}}
+					{{/if}}
 					{{/each}}
 				</ol>
 			</div>
