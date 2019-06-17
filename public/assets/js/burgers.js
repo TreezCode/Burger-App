@@ -28,6 +28,7 @@ $(function () {
 
         var newburger = {
             name: $("#ca").val().trim(),
+            devour: 0
         };
 
         // Send the POST request.

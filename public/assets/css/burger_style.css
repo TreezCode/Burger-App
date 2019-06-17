@@ -1,33 +1,72 @@
 
+/* Body
+================================================================== */
 body {
     background: url("../img/good-burger-bg.jpg") center center fixed;
     background-size: cover;
+    height: 100vh;
 }
 
-ol {
-    display: inline-block;
-    margin-top: 1em;
+/* Scrollbar 
+================================================================== */
+body::-webkit-scrollbar {
+    width: 7px;
 }
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(212, 120, 0);
+    background-image: -webkit-gradient(linear,
+            40% 0%,
+            75% 84%,
+            from(rgba(226, 137, 4, 0.849)),
+            to(rgb(197, 112, 1)),
+            color-stop(.6, rgb(167, 89, 0)))
+}
+
+/* Headers
+================================================================== */
 .header {
-    background: #ffffff;
+    background: #000000e3;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 10px 5px grey inset;
 }
 
+.font-img {
+    max-width: 100%;
+}
+
+/* Rows 
+================================================================== */
 .row-center {
     width: 50%;
     margin: auto;
 }
 
 .row-flex {
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
+/* Cards
+================================================================== */
 .card {
+    background: #000000e3;
+    color: white;
     box-shadow: 0 0 10px 5px grey inset;
     border: none;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.25em;
 }
 
 #ready {
@@ -36,4 +75,78 @@ ol {
 
 #finished {
     color: red;
+}
+
+li {
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 1px;
+}
+
+.delete-burger,
+.change-devour {
+    vertical-align: middle;
+}
+
+.fa-hamburger, 
+.fa-trash-alt {
+    color: #ff7d01;
+}
+
+.fa-hamburger:hover {
+    color: rgb(34, 202, 0);
+}
+
+.fa-trash-alt:hover {
+    color: red;
+}
+
+/* Add Burger 
+================================================================== */
+textarea {
+    background: black;
+    color: white;
+    outline: none;
+}
+
+/* Font Awesome Icons / Submit
+================================================================== */
+.fas,
+.fab,
+.submit-img {
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.fas:hover,
+.fab:hover,
+.submit-img:hover {
+    transform: scale(1.25);
+}
+
+/* Footer
+================================================================== */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: #000000e3;
+    box-shadow: 0 0 10px 5px grey inset;
+    text-align: center;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: center;
+    color: #ff7d01;    
+}
+
+.icon:hover {
+    color: rgb(34, 202, 0); 
+}
+
+#copywrite {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
 }
