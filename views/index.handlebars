@@ -1,63 +1,63 @@
-
 <div class="container mt-2">
 
-  <div class="row text-center">
-    <div class="header col-md-12">
-      <img class="font-img" src="https://fontmeme.com/permalink/190617/4db3d57a6ab3fdaa4b4f8616a9d90f33.png" alt="nickelodeon-font" border="0">
-    </div>
-  </div>
+	<div class="row text-center">
+		<div class="header col-md-12">
+			<img class="font-img" src="https://fontmeme.com/permalink/190617/4db3d57a6ab3fdaa4b4f8616a9d90f33.png" alt="nickelodeon-font" border="0">
+		</div>
+	</div>
 
-  <div class="row row-flex text-center mt-3">
-    <div class="card col-md-5">
-      <div class="card-body">
-        <div class="card-header" id="ready">
-          <h2>Good to Go:</h2>
-        </div>
-        <ol>
-          {{#each burgers}}
-            {{#unless devour}}
-              {{> burgers/burger-block devour=true}}
-            {{/unless}}
-          {{/each}}
-        </ol>
-      </div>
-    </div>
+	<div class="row row-flex text-center mt-3">
+		<div class="card col-md-5">
+			<div class="card-body">
+				<div class="card-header" id="ready">
+					<h2>Good to Go:</h2>
+				</div>
+				<ol>
+					{{#each burgers}}
+						{{#unless devour}}
+							{{> burgers/burger-block devour=true}}
+						{{/unless}}
+					{{/each}}
+				</ol>
+			</div>
+		</div>
 
-    <div class="card col-md-5">
-      <div class="card-body">
-        <div class="card-header" id="finished">
-          <h2>Good to Throw:</h2>
-        </div>
-        <ol>
-          {{#each burgers}}
-            {{#if devour}}
-              {{> burgers/burger-block devour=false}}
-            {{/if}}
-          {{/each}}
-        </ol>
-      </div>
-    </div>
-  </div>
+		<div class="card col-md-5">
+			<div class="card-body">
+				<div class="card-header" id="finished">
+					<h2>Good to Throw:</h2>
+				</div>
+				<ol>
+					{{#each burgers}}
+						{{#if devour}}
+							{{> burgers/burger-block devour=false}}
+						{{/if}}
+					{{/each}}
+				</ol>
+			</div>
+		</div>
+	</div>
 
-  <div class="row row-center text-center mt-3">
-    <div class="header col-md-12">
-      <img class="font-img" src="https://fontmeme.com/permalink/190617/0adf7a518c2deff0986a8aa311ea5419.png" alt="nickelodeon-font" border="0"></<img>
-    </div>
-  </div>
+	<div class="row row-center text-center mt-3">
+		<div class="header col-md-12">
+			<img class="font-img" src="https://fontmeme.com/permalink/190617/0adf7a518c2deff0986a8aa311ea5419.png"
+				alt="nickelodeon-font" border="0"></<img>
+		</div>
+	</div>
 
-  <div class="row text-center mt-3">
-      <form class="create-form col-md-12">
-        <div class="form-group mb-0">
-          <textarea class="text-center pt-3" type="text" id="ca" name="name" rows="2" cols="40" placeholder="Enter Burger Name"></textarea>
-        </div>
-        <input class="submit-img" type="image" src="https://images.squarespace-cdn.com/content/v1/5cff37a530044b00010dd11f/1560285112770-6WJPKMERDKMDM7W45MII/ke17ZwdGBToddI8pDm48kCDPAJanA_hv8UFutyc75NNZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7Rb66VC8y5UmDKESC3gpGyVvRDKpG4p_QGYclqeuNWRXtom1-N_eYES5jCWHm-XKpQ/good-burger-logo-3.png" alt="submit" width="100" height="125"></input>
-      </form>
-  </div>
+	<div class="row text-center mt-3">
+		<form class="create-form col-md-12">
+			<div class="form-group mb-0">
+				<textarea class="text-center pt-3" type="text" id="ca" name="name" rows="2" cols="40" placeholder="Enter Burger Name"></textarea>
+			</div>
+			<input class="submit-img" type="image" src="https://images.squarespace-cdn.com/content/v1/5cff37a530044b00010dd11f/1560285112770-6WJPKMERDKMDM7W45MII/ke17ZwdGBToddI8pDm48kCDPAJanA_hv8UFutyc75NNZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7Rb66VC8y5UmDKESC3gpGyVvRDKpG4p_QGYclqeuNWRXtom1-N_eYES5jCWHm-XKpQ/good-burger-logo-3.png" alt="submit" width="100" height="125"></input>
+		</form>
+	</div>
 
-  </div>
+</div>
 
 <footer class="footer mt-auto py-3">
-  <a class="footer-flex" href="https://treezcode.github.io/" target="_blank"><i class="fas fa-portrait fa-2x icon"></i></a>
-  <span class="footer-flex" id="copywrite">Designed and Coded by ©Treez</span>
-  <a class="footer-flex" href="https://github.com/TreezCode" target="_blank"><i class="fab fa-github-alt fa-2x icon"></i></a>
+	<a class="footer-flex" href="https://treezcode.github.io/" target="_blank"><i class="fas fa-portrait fa-2x icon"></i></a>
+	<span class="footer-flex" id="copywrite">Designed and Coded by ©Treez</span>
+	<a class="footer-flex" href="https://github.com/TreezCode" target="_blank"><i class="fab fa-github-alt fa-2x icon"></i></a>
 </footer>
